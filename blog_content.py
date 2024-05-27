@@ -1,7 +1,7 @@
 # Blog content
 blogs = {
     "My Freshman Year In College": {
-        "image": "E:\\python codes\\testWork\\MyWebsite\\blogImages\\freshman.jpg",
+        "image": "blogImages\\freshman.jpg",
         "snippet": "Things I learned in my 1st year of college",
         "content": """
         # My Freshman Year In College
@@ -9,7 +9,7 @@ blogs = {
         """
     },
     "How I learned to code": {
-        "image": "E:\\python codes\\testWork\\MyWebsite\\blogImages\\howIlearnttocode.jpg",
+        "image": "blogImages\\howIlearnttocode.jpg",
         "snippet": "My secret of programming",
         "content": """
         # How I learned to code
