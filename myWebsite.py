@@ -59,15 +59,15 @@ selected = option_menu(
 if selected == "Home":
     st.write("---")
     # Header
-    col1, col2, col3 = st.columns((0.5,1,2))
+    col1, col2, col3 = st.columns((1,1,1))
     with col3:
-        a1,a2,a3 = st.columns((1,1.3,1))
+        a1,a2,a3 = st.columns((1,1,1))
         with a2:
             st.markdown("<h1 style='font-size:18px; color:#d0d7fe;'>Hello, I'm 👋</h1>", unsafe_allow_html=True)
-        b1,b2,b3 = st.columns((0.7,7,0.7))
+        b1,b2,b3 = st.columns((1,1,1))
         with b2:
             st.markdown("<h1 style='font-size:60px; color:#d0d7fe;'>Pritam Acharya</h1>", unsafe_allow_html=True)
-        c1,c2,c3 = st.columns((1,2.6,1))
+        c1,c2,c3 = st.columns((1,1,1))
         with c2:
             st.markdown("<h1 style='font-size:30px; color:#68658c;'>AI/ML Enthusiast</h1>", unsafe_allow_html=True)
 
@@ -109,7 +109,7 @@ So yeah, that's me—just a guy who's passionate about tech, enjoys his hobbies,
 
     with st.container():
         st.write("---")
-        coll1, coll2, coll3 = st.columns((2,2,1))
+        coll1, coll2, coll3 = st.columns((1,1,1))
 
         with coll2:
             st.markdown("<h1 style='font-size:45px; color:#8363ac;'>Education</h1>", unsafe_allow_html=True)
@@ -176,7 +176,7 @@ It reads a lyric provided by the user from a txt file. The text is reorganized a
 
     with st.container():
         st.write("---")
-        coll1, coll2, coll3 = st.columns((2,2.25,1))
+        coll1, coll2, coll3 = st.columns((1,1,1))
 
         with coll2:
             st.markdown("<h1 style='font-size:45px; color:#8386bd;'>Achievements</h1>", unsafe_allow_html=True)
