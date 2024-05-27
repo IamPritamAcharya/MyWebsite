@@ -14,6 +14,7 @@ def local_css(file_name):
 st.set_page_config(page_title="Pritam's Site", page_icon=":crown:", layout="wide")
 local_css("style//main.css")
 
+
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
@@ -35,13 +36,14 @@ lottie_coding1 = "https://lottie.host/f0c38411-abd4-4505-9a4d-bf70edb3d427/Fkd1l
 lottie_coding2 = "https://lottie.host/64988bfe-440e-4bf5-80af-c31cb9aa295c/6F4BBMhmJx.json"
 contactMe = "https://lottie.host/e968c2ab-014a-4a8c-abac-af4617552995/FzLOB6vOM9.json"
 educationCss = "https://lottie.host/7984ef8b-58aa-4051-84c8-646128586dba/TLLFCTcNcy.json"
+achivementsCss = "https://lottie.host/8093e3f7-478f-4692-8ee6-2458d5343db0/A20PtOqlhY.json"
 
-img_contact_form = Image.open("E:\\python codes\\testWork\\MyWebsite\\images\\1.png")
-project1 = Image.open("E:\\python codes\\testWork\\MyWebsite\\images\\temp1.png")
-project2 = Image.open("E:\\python codes\\testWork\\MyWebsite\\images\\temp2.png")
-project3 = Image.open("E:\\python codes\\testWork\\MyWebsite\\images\\temp3.png")
-pfp = Image.open("E:\\python codes\\testWork\\MyWebsite\\images\\pfp.png")
-
+img_contact_form = Image.open("images\\1.png")
+project1 = Image.open("images\\temp1.png")
+project2 = Image.open("images\\temp2.png")
+project3 = Image.open("images\\temp3.png")
+pfp = Image.open("images\\pfp.png")
+achivements1 = Image.open("images\\certiSE.png")
 
 # bar
 # Navigation bar
@@ -55,15 +57,21 @@ selected = option_menu(
 # HOME
 #-------------------------------------------------------------------------------------------------------------
 
-
 if selected == "Home":
     st.write("---")
     # Header
     col1, col2, col3 = st.columns((0.5,1,2))
     with col3:
-        st.subheader("Hi, I am Pritam :wave:")
-        st.title("Aspiring Software Engineer")
-        st.write("AI/ML Enthusiast")
+        a1,a2,a3 = st.columns((1,1.3,1))
+        with a2:
+            st.markdown("<h1 style='font-size:18px; color:#d0d7fe;'>Hello, I'm 👋</h1>", unsafe_allow_html=True)
+        b1,b2,b3 = st.columns((0.7,7,0.7))
+        with b2:
+            st.markdown("<h1 style='font-size:60px; color:#d0d7fe;'>Pritam Acharya</h1>", unsafe_allow_html=True)
+        c1,c2,c3 = st.columns((1,2.6,1))
+        with c2:
+            st.markdown("<h1 style='font-size:30px; color:#68658c;'>AI/ML Enthusiast</h1>", unsafe_allow_html=True)
+
         st.write("#")
         cols = st.columns(len(SOCIAL_MEDIA))   
         for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
@@ -105,7 +113,7 @@ So yeah, that's me—just a guy who's passionate about tech, enjoys his hobbies,
         coll1, coll2, coll3 = st.columns((2,2,1))
 
         with coll2:
-            st.header("Education")
+            st.markdown("<h1 style='font-size:45px; color:#8363ac;'>Education</h1>", unsafe_allow_html=True)
         
         c0l1, c0l2 = st.columns(2)
         with c0l1:
@@ -126,8 +134,8 @@ So yeah, that's me—just a guy who's passionate about tech, enjoys his hobbies,
 
     with st.container():
         st.write("---")
-        st.header("My Standout Projects")
-        st.write("In total I have 12 Projects. You can view all of them on my Linkdin ([Click here](https://www.linkedin.com/in/pritamacharya/)).")
+        st.markdown("<h1 style='font-size:45px; color:#a378db;'>My Standout Projects</h1>", unsafe_allow_html=True)
+        st.write("In total I have 12 Projects. You can view all of them on my LinkdIn ([Click here](https://www.linkedin.com/in/pritamacharya/)).")
         image_column, text_column = st.columns((1,2))
 
         with image_column:
@@ -164,7 +172,39 @@ So yeah, that's me—just a guy who's passionate about tech, enjoys his hobbies,
                 This is a cutting-edge Python script designed to revolutionize the world of rap music through the power of artificial intelligence. Here's a breakdown of its functionality:
 It reads a lyric provided by the user from a txt file. The text is reorganized and by using a pre trained model it converts the text to speech which sounds like rap due to the reorganization. It's a simple yet creative project.
             """)
+    st.write("#")
+    st.write("#")
+
+    with st.container():
+        st.write("---")
+        coll1, coll2, coll3 = st.columns((2,2.25,1))
+
+        with coll2:
+            st.markdown("<h1 style='font-size:45px; color:#8386bd;'>Achievements</h1>", unsafe_allow_html=True)
+        with coll1:
+            st.empty()
+        with coll3:
+            st.empty()
+        left_column,middle_column, right_column = st.columns((1,1,1))
+        with left_column:
+            
+            #st.image(achivements1)
+            st_lottie(achivementsCss, height=450, key="achivement1")
+            st.write("##")
+        
+        with middle_column:
+            st.write("#")
+            st.image(achivements1)
+            st.write("Software Intern Certificate from HackerRank [(for more)](https://www.linkedin.com/in/pritamacharya/)")
+            st.write("---")
+            
+            
     
+        with right_column:
+            st_lottie(achivementsCss, height=450, key="achivement2")
+        st.write("#")
+        st.write("---")
+        
     
 #-------------------------------------------------------------------------------------------------------------
 
