@@ -39,10 +39,10 @@ educationCss = "https://lottie.host/7984ef8b-58aa-4051-84c8-646128586dba/TLLFCTc
 achivementsCss = "https://lottie.host/8093e3f7-478f-4692-8ee6-2458d5343db0/A20PtOqlhY.json"
 
 project1 = Image.open("temp1.png")
-project2 = Image.open("images\\temp2.png")
-project3 = Image.open("images\\temp3.png")
-pfp = Image.open("images\\pfp.png")
-achivements1 = Image.open("images\\certiSE.png")
+project2 = Image.open("temp2.png")
+project3 = Image.open("temp3.png")
+pfp = Image.open("pfp.png")
+achivements1 = Image.open("certiSE.png")
 
 # bar
 # Navigation bar
