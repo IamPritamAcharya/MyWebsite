@@ -1,0 +1,8 @@
+.section-background {
+    background-image: url('images/backgr.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Optional: Adjust text color for better readability */
+}

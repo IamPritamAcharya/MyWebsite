@@ -1,0 +1,17 @@
+body {
+    background-image: url('images//backgr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content .header {
+    margin-bottom: 20px;
+}

@@ -38,7 +38,6 @@ contactMe = "https://lottie.host/e968c2ab-014a-4a8c-abac-af4617552995/FzLOB6vOM9
 educationCss = "https://lottie.host/7984ef8b-58aa-4051-84c8-646128586dba/TLLFCTcNcy.json"
 achivementsCss = "https://lottie.host/8093e3f7-478f-4692-8ee6-2458d5343db0/A20PtOqlhY.json"
 
-img_contact_form = Image.open("images\\1.png")
 project1 = Image.open("images\\temp1.png")
 project2 = Image.open("images\\temp2.png")
 project3 = Image.open("images\\temp3.png")
