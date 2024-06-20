@@ -42,7 +42,7 @@ project1 = Image.open("temp1.png")
 project2 = Image.open("temp2.png")
 project3 = Image.open("temp3.png")
 pfp = Image.open("pfp.png")
-achivements1 = Image.open("certiSE.png")
+achivements1 = Image.open("cs50.png")
 
 # bar
 # Navigation bar
@@ -194,7 +194,7 @@ It reads a lyric provided by the user from a txt file. The text is reorganized a
         with middle_column:
             st.write("#")
             st.image(achivements1)
-            st.write("Software Intern Certificate from HackerRank [(for more)](https://www.linkedin.com/in/pritamacharya/)")
+            st.write("CS50’s Introduction to Artificial Intelligence with Python Certificate [(for more)](https://www.linkedin.com/in/pritamacharya/)")
             st.write("---")
             
             
